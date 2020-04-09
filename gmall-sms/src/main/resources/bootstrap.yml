@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: sms-servuce
+  cloud:
+    nacos:
+      config:
+        server-addr:  127.0.0.1:8848
+        namespace: 456b310d-9c88-401e-ac77-d33c621b992b
+        group: dev
+        # properties 文件不用配置 但是yml配置文件后缀
+        file-extension: yml

@@ -1,0 +1,31 @@
+server:
+  port: 8085
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.2.101:3306/guli_sms
+    username: root
+    password: root
+
+
+  redis:
+    host: 192.168.2.101
+
+
+#配置mybatis-plus的id组件策略
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+#配置mybatis-plus的映射文件目录
+  mapper-locations: classpath:mapper/sms/**/*.xml
+
+
+

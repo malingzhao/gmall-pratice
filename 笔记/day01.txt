@@ -1,0 +1,29 @@
+pms的模块的改造
+1. pom.xml
+  引入core
+  mysql的驱动版本 5.1.46
+
+2. bootstrap.yml
+ spring.application.name
+ spring.cloud.nacos.config.server-addr/group/namespace/file-extension
+
+
+
+3. application.yml
+  spring.cloud.discovery.server-addr
+  datasource 四大参数
+  redis连接地址
+  mybatis-plus(id-type mapper-locations)
+
+4.启动类
+ @EnableDiscoveryClient
+ @EnableSwagger2
+ @MapperScan("dao的包的路径")
+ @SpringBootApplication
+
+5. java配置
+  security
+  分页插件
+
+gitnore
+  mvnw*
